@@ -1,9 +1,7 @@
-# Tinkers' Tool Leveling
+### Liketechnik's Tinker Tweaks
 
-You know back in the days, when you played GTA and used the cheat code for a tank, and then went on and caused mayhem? This mod is like that, except for tinker tools and the cheatcode takes longer to enter.
+This mod basically gives you back the behaviour of the old [Iguana Tinker Tweaks](https://github.com/SlimeKnights/IguanaTweaksTConstruct) for MC 1.7.10 (and downwards). It is based on [Tinker's Tool Leveling](https://github.com/SlimeKnights/TinkersToolLeveling), but has a completely different behaviour: For every new level, you get a random modifier applied to your tool. If you want to go fully crazy, you can configure the mod to give you a free modifier every level on top of that.
 
+# **Note**
 
-Gives your Tools XP, allowing them to level up. On levelup an extra modifier is rewarded.
-You get xp for doing whatever the tool was intended for, so breaking blocks with pickaxes, killing things with swords, etc.
-
-Note that swords get xp relative to the damage dealt when the entity is killed, not when the damage is dealt. You only get xp if the mob is killed!
+**This is currently WIP, don't use it as long as the transition isn't completely finished.**
