@@ -1,4 +1,4 @@
-package slimeknights.toolleveling.config;
+package liketechnik.tinkertweaks.config;
 
 import slimeknights.mantle.config.AbstractConfig;
 import slimeknights.mantle.config.AbstractConfigSyncPacket;

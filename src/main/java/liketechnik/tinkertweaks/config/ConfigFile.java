@@ -1,4 +1,4 @@
-package slimeknights.toolleveling.config;
+package liketechnik.tinkertweaks.config;
 
 import com.google.common.collect.Sets;
 

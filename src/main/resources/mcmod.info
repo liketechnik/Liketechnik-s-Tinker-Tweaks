@@ -1,15 +1,16 @@
 [{
-    "modid": "tinkertoolleveling",
-    "name": "Tinkers Tool Leveling",
-    "description": "A small mod that gives your tools XP and awards extra modifiers on levelup",
+    "modid": "liketechnikstinkertweaks",
+    "name": "Liketechnik's Tinker Tweaks",
+    "description": "A small mod that gives your tools XP and awards random modifiers applied to your tools on levelup",
     "version": "${version}",
     "mcversion": "${MCversion}",
-    "url": "https://github.com/SlimeKnights/TinkersToolLeveling",
+    "url": "https://github.com/liketechnik/Liketechnik-s-Tinker-Tweaks",
     "updateUrl": "",
     "authorList": [
-      "boni"
+      "boni",
+      "liketechnik"
     ],
-    "credits": "",
+    "credits": "boni, for creating Tinkers Tool Leveling, the base this mod was created on",
     "logoFile": "",
     "screenshots": [],
     "parent":"",

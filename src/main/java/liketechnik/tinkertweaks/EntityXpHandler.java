@@ -1,5 +1,7 @@
-package slimeknights.toolleveling;
+package liketechnik.tinkertweaks;
 
+import liketechnik.tinkertweaks.capability.CapabilityDamageXp;
+import liketechnik.tinkertweaks.capability.DamageXpHandler;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.ResourceLocation;
@@ -7,14 +9,11 @@ import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import slimeknights.toolleveling.capability.CapabilityDamageXp;
-import slimeknights.toolleveling.capability.DamageXpHandler;
-
 public class EntityXpHandler {
 
   public static final EntityXpHandler INSTANCE = new EntityXpHandler();
 
-  private static final ResourceLocation CAPABILITY_KEY = new ResourceLocation(TinkerToolLeveling.MODID, "entityxp");
+  private static final ResourceLocation CAPABILITY_KEY = new ResourceLocation(LiketechniksTinkerTweaks.MODID, "entityxp");
 
   @SubscribeEvent
   public void onCapabilityAttach(AttachCapabilitiesEvent<Entity> event) {

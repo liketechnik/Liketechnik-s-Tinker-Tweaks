@@ -1,4 +1,4 @@
-package slimeknights.toolleveling.capability;
+package liketechnik.tinkertweaks.capability;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;

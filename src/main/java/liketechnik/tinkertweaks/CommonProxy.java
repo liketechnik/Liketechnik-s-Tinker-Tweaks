@@ -1,4 +1,4 @@
-package slimeknights.toolleveling;
+package liketechnik.tinkertweaks;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import slimeknights.tconstruct.common.Sounds;
 
-@Mod.EventBusSubscriber(modid = TinkerToolLeveling.MODID)
+@Mod.EventBusSubscriber(modid = LiketechniksTinkerTweaks.MODID)
 public class CommonProxy {
 
   private static SoundEvent SOUND_LEVELUP = sound("levelup");
@@ -37,7 +37,7 @@ public class CommonProxy {
   }
 
   private static SoundEvent sound(String name) {
-    ResourceLocation location = new ResourceLocation(TinkerToolLeveling.MODID, name);
+    ResourceLocation location = new ResourceLocation(LiketechniksTinkerTweaks.MODID, name);
     SoundEvent event = new SoundEvent(location);
     event.setRegistryName(location);
     return event;

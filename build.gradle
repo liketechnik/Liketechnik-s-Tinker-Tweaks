@@ -38,8 +38,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-group= "slimeknights"
-archivesBaseName = "TinkerToolLeveling"
+group= "liketechnik"
+archivesBaseName = "LiketechniksTinkerTweaks"
 
 // External properties
 ext.configFile = file "build.properties"

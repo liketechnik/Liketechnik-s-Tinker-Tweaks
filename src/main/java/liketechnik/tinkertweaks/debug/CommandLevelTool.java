@@ -1,5 +1,7 @@
-package slimeknights.toolleveling.debug;
+package liketechnik.tinkertweaks.debug;
 
+import liketechnik.tinkertweaks.LiketechniksTinkerTweaks;
+import liketechnik.tinkertweaks.ToolLevelNBT;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
@@ -9,8 +11,6 @@ import net.minecraft.server.MinecraftServer;
 
 import slimeknights.tconstruct.library.tools.ToolCore;
 import slimeknights.tconstruct.library.utils.TinkerUtil;
-import slimeknights.toolleveling.TinkerToolLeveling;
-import slimeknights.toolleveling.ToolLevelNBT;
 
 public class CommandLevelTool extends CommandBase {
 
@@ -40,10 +40,10 @@ public class CommandLevelTool extends CommandBase {
         xp = parseInt(args[0]);
       }
       else {
-        ToolLevelNBT data = new ToolLevelNBT(TinkerUtil.getModifierTag(itemStack, TinkerToolLeveling.modToolLeveling.getModifierIdentifier()));
-        xp = TinkerToolLeveling.modToolLeveling.getXpForLevelup(data.level, itemStack);
+        ToolLevelNBT data = new ToolLevelNBT(TinkerUtil.getModifierTag(itemStack, LiketechniksTinkerTweaks.modToolLeveling.getModifierIdentifier()));
+        xp = LiketechniksTinkerTweaks.modToolLeveling.getXpForLevelup(data.level, itemStack);
       }
-      TinkerToolLeveling.modToolLeveling.addXp(itemStack, xp, player);
+      LiketechniksTinkerTweaks.modToolLeveling.addXp(itemStack, xp, player);
     }
     else {
       throw new CommandException("No tinker tool in hand");

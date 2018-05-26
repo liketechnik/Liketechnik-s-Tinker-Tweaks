@@ -1,4 +1,4 @@
-package slimeknights.toolleveling.capability;
+package liketechnik.tinkertweaks.capability;
 
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagList;

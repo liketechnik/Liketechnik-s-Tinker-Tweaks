@@ -1,4 +1,4 @@
-package slimeknights.toolleveling;
+package liketechnik.tinkertweaks;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;

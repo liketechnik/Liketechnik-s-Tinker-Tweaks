@@ -1,5 +1,7 @@
-package slimeknights.toolleveling;
+package liketechnik.tinkertweaks;
 
+import liketechnik.tinkertweaks.capability.CapabilityDamageXp;
+import liketechnik.tinkertweaks.config.Config;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -16,32 +18,25 @@ import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import javax.annotation.Nullable;
-
-import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.entity.EntityProjectileBase;
 import slimeknights.tconstruct.library.events.TinkerToolEvent;
 import slimeknights.tconstruct.library.modifiers.*;
 import slimeknights.tconstruct.library.tinkering.TinkersItem;
 import slimeknights.tconstruct.library.tools.ProjectileLauncherNBT;
-import slimeknights.tconstruct.library.tools.ToolNBT;
 import slimeknights.tconstruct.library.tools.ranged.BowCore;
-import slimeknights.tconstruct.library.traits.IProjectileTrait;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.Tags;
 import slimeknights.tconstruct.library.utils.TinkerUtil;
 import slimeknights.tconstruct.library.utils.ToolBuilder;
 import slimeknights.tconstruct.library.utils.ToolHelper;
 import slimeknights.tconstruct.tools.melee.TinkerMeleeWeapons;
-import slimeknights.toolleveling.capability.CapabilityDamageXp;
-import slimeknights.toolleveling.config.Config;
 
 import java.util.List;
 
 public class ModToolLeveling extends ProjectileModifierTrait {
 
   public ModToolLeveling() {
-    super("toolleveling", 0xffffff);
+    super("tinkertweaks", 0xffffff);
 
     aspects.clear();
     addAspects(new ModifierAspect.DataAspect(this));
@@ -217,8 +212,8 @@ public class ModToolLeveling extends ProjectileModifierTrait {
       this.apply(tool);
       if (!player.world.isRemote) {
         // for some reason the proxy is messed up. cba to fix now
-        TinkerToolLeveling.proxy.playLevelupDing(player);
-        TinkerToolLeveling.proxy.sendLevelUpMessage(data.level, tool, player);
+        LiketechniksTinkerTweaks.proxy.playLevelupDing(player);
+        LiketechniksTinkerTweaks.proxy.sendLevelUpMessage(data.level, tool, player);
       }
       try {
         NBTTagCompound rootTag = TagUtil.getTagSafe(tool);

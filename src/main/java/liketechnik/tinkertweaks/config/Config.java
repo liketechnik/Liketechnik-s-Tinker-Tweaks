@@ -1,4 +1,4 @@
-package slimeknights.toolleveling.config;
+package liketechnik.tinkertweaks.config;
 
 import net.minecraft.item.Item;
 
@@ -9,8 +9,6 @@ import java.util.List;
 import slimeknights.mantle.config.AbstractConfig;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.modifiers.IModifier;
-
-import javax.tools.Tool;
 
 public class Config extends AbstractConfig {
 

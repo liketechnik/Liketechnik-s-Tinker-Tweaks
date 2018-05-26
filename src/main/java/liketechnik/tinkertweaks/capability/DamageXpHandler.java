@@ -1,5 +1,6 @@
-package slimeknights.toolleveling.capability;
+package liketechnik.tinkertweaks.capability;
 
+import liketechnik.tinkertweaks.LiketechniksTinkerTweaks;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -20,7 +21,6 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import slimeknights.tconstruct.library.tools.ToolCore;
-import slimeknights.toolleveling.TinkerToolLeveling;
 
 public class DamageXpHandler implements IDamageXp, ICapabilitySerializable<NBTTagList> {
 
@@ -73,7 +73,7 @@ public class DamageXpHandler implements IDamageXp, ICapabilitySerializable<NBTTa
       // check for identity. should work in most cases because the entity was killed without loading/unloading
       for(int i = 0; i < itemHandler.getSlots(); i++) {
         if(itemHandler.getStackInSlot(i) == tool) {
-          TinkerToolLeveling.modToolLeveling.addXp(tool, Math.round(damage), player);
+          LiketechniksTinkerTweaks.modToolLeveling.addXp(tool, Math.round(damage), player);
           return;
         }
       }
@@ -81,7 +81,7 @@ public class DamageXpHandler implements IDamageXp, ICapabilitySerializable<NBTTa
       // check for equal stack in case instance equality didn't find it
       for(int i = 0; i < itemHandler.getSlots(); i++) {
         if(ToolCore.isEqualTinkersItem(itemHandler.getStackInSlot(i), tool)) {
-          TinkerToolLeveling.modToolLeveling.addXp(itemHandler.getStackInSlot(i), Math.round(damage), player);
+          LiketechniksTinkerTweaks.modToolLeveling.addXp(itemHandler.getStackInSlot(i), Math.round(damage), player);
           return;
         }
       }

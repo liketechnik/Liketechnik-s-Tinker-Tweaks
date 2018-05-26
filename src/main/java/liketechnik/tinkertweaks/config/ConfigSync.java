@@ -1,4 +1,4 @@
-package slimeknights.toolleveling.config;
+package liketechnik.tinkertweaks.config;
 
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraftforge.fml.common.FMLCommonHandler;
@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import slimeknights.toolleveling.TinkerToolLeveling;
+import liketechnik.tinkertweaks.LiketechniksTinkerTweaks;
 
 public class ConfigSync {
 
@@ -16,7 +16,7 @@ public class ConfigSync {
   public void playerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
     if(event.player instanceof EntityPlayerMP && FMLCommonHandler.instance().getSide().isServer()) {
       ConfigSyncPacket packet = new ConfigSyncPacket();
-      TinkerToolLeveling.networkWrapper.network.sendTo(packet, (EntityPlayerMP) event.player);
+      LiketechniksTinkerTweaks.networkWrapper.network.sendTo(packet, (EntityPlayerMP) event.player);
     }
   }
 

@@ -1,7 +1,6 @@
-package slimeknights.toolleveling.debug;
+package liketechnik.tinkertweaks.debug;
 
 import net.minecraft.command.CommandBase;
-import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
 import slimeknights.tconstruct.library.TinkerRegistry;
